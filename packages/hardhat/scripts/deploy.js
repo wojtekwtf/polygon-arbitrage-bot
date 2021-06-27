@@ -9,7 +9,9 @@ const main = async () => {
 
   console.log("\n\n 📡 Deploying...\n");
 
-  const yourContract = await deploy("YourContract") // <-- add in constructor args like line 19 vvvv
+  const yourContract = await deploy("Arbitrage", ["0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32", "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506"]) // <-- add in constructor args like line 19 vvvv
+  const migrations = await deploy("Migrations")
+  const UniswapV2Library = await deploy("UniswapV2Library")
 
   //const yourContract = await ethers.getContractAt('YourContract', "0xaAC799eC2d00C013f1F11c37E654e59B0429DF6A") //<-- if you want to instantiate a version of a contract at a specific address!
   //const secondContract = await deploy("SecondContract")

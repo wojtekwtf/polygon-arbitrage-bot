@@ -15,38 +15,43 @@
       },
       {
         "indexed": false,
-        "internalType": "string",
-        "name": "purpose",
-        "type": "string"
+        "internalType": "int32",
+        "name": "result",
+        "type": "int32"
       }
     ],
-    "name": "SetPurpose",
+    "name": "AddNumber",
     "type": "event"
-  },
-  {
-    "inputs": [],
-    "name": "purpose",
-    "outputs": [
-      {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
   },
   {
     "inputs": [
       {
-        "internalType": "string",
-        "name": "newPurpose",
-        "type": "string"
+        "internalType": "int32",
+        "name": "num1",
+        "type": "int32"
+      },
+      {
+        "internalType": "int32",
+        "name": "num2",
+        "type": "int32"
       }
     ],
-    "name": "setPurpose",
+    "name": "addNumbers",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "result",
+    "outputs": [
+      {
+        "internalType": "int32",
+        "name": "",
+        "type": "int32"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   }
 ]
